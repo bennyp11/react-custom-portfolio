@@ -92,3 +92,41 @@ a {
   color: #79A1B8;
   text-decoration: none;
 }
+
+.rainbow-bar { 
+  height: 40px;
+  width: 100%;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+background: linear-gradient(124deg, #282c34, #79A1B8, #79b87e, #5de81d, #e5e81d, rgb(232, 87, 29), #5f0000, #5f005f, #dd00f3, #9a00f3);
+background-size: 1800% 1800%;
+
+-webkit-animation: rainbow 20s ease infinite;
+-z-animation: rainbow 20s ease infinite;
+-o-animation: rainbow 20s ease infinite;
+  animation: rainbow 20s ease infinite;}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+

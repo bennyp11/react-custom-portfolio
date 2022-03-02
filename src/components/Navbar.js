@@ -12,9 +12,11 @@ export default function NavBar() {
     <Stack bsPrefix='hstack' className="stack-container" direction="horizontal" gap={5}>
     <Logo />
     <div className='gap'></div>
-    <Nav activeKey="/home">
+    <Nav bsPrefix='nav-container' activeKey="/home">
         <Nav.Item>
+        <div className='link-gap'>
         <Nav.Link bsPrefix='link' href="/aboutme">ABOUT ME </Nav.Link>
+        </div>
         </Nav.Item>
         <Nav.Item>
         <Nav.Link bsPrefix='link' href="/projects">PROJECTS </Nav.Link>

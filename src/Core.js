@@ -10,6 +10,7 @@ import "./Core.css";
 export default function Core() {
   return (
     <div className="core-container">
+    <div className="rainbow-bar"></div>
     <div className="nav-container">
     <NavBar>
         <Link className="nav-1" to="/aboutme">About Me</Link> | {" "}
