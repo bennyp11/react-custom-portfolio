@@ -1,0 +1,55 @@
+.navbar-container {
+    border-top: 1px solid white;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.stack-container {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    color: #5C6C7D;
+    
+}
+
+.gap-5 {
+    gap: 10px;
+}
+
+.nav-item-container {
+    justify-content: flex-end;
+    color: #5C6C7D;
+}
+
+.link-container {
+    padding-top: 50%;
+}
+
+.link {
+    color: #5C6C7D;
+    margin: 8px;
+    padding: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    color: #79A1B8;
+}
+
+img {
+    height: 192px;
+    width: 192px;
+}
+
+.hstack {
+    border-top: 1px solid red;
+}
+
+.hstack img {
+    border: 1px solid red;
+}
+
+
+
