@@ -11,7 +11,7 @@ export default function NavBar() {
     return (
     <Stack bsPrefix='hstack' className="stack-container" direction="horizontal" gap={5}>
     <Logo />
-    <div bsPrefix='gap-5'></div>
+    <div className='gap'></div>
     <Nav activeKey="/home">
         <Nav.Item>
         <Nav.Link bsPrefix='link' href="/aboutme">ABOUT ME </Nav.Link>
