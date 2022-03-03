@@ -19,7 +19,9 @@ export default function Core() {
     </NavBar>
     </div>
     <div className="landing-page-container">
-    <h1>Lets do something cool here</h1>
+    /***
+    <LandingPage />
+    ******/
     <Particle />
     </div>
     <Outlet />

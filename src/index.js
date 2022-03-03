@@ -15,10 +15,10 @@ render(
   <BrowserRouter >
     <Routes>
       <Route path="/" element={<Core />} >
-        <Route path="projects" element={<Projects />} />
-        <Route path="aboutme" element={<AboutMe />} />
-        <Route path="skills" element={<Skills />} />
-        <Route path="*" element={<main style={{ padding: "1rem"}}><p>This Route Doesn't Exist</p></main>} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/aboutme" element={<AboutMe />} />
+      <Route path="/skills" element={<Skills />} />
+      <Route path="*" element={<main style={{ padding: "1rem"}}><p>This Route Doesn't Exist</p></main>} />
       </Route>
     </Routes>
   </BrowserRouter>
