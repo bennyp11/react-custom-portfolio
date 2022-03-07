@@ -11,6 +11,7 @@ const Animation = ()=> {
           'cloud native system designer',
           2000,
           'computerphile',
+          2000
         ]}
         wrapper="a"
         repeat={Infinity}

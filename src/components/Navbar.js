@@ -1,13 +1,18 @@
 import Nav from "react-bootstrap/Nav";
 import Stack from "react-bootstrap/Stack";
 import Logo from "./Logo.js";
+import { Link } from "react-router-dom";
 //import NavDropdown from "react-bootstrap/NavDropdown";
 //import Form from "react-bootstrap/Form";
 //import FormControl from "react-bootstrap/FormControl";
 //import Button from "react-bootstrap/Button";
 import "./Navbar.css";
 
-export default function NavBar() {
+export default function NavBar(props) {
+    function handleRouteChange(e) {
+        props.onChange(e.target.value);
+    }
+
     return (
     <Stack bsPrefix='hstack' className="stack-container" direction="horizontal" gap={5}>
     <Logo />
@@ -15,14 +20,14 @@ export default function NavBar() {
     <Nav bsPrefix='nav-container' activeKey="/home">
         <Nav.Item>
         <div className='link-gap'>
-        <Nav.Link bsPrefix='link' href="/aboutme">ABOUT ME </Nav.Link>
+        <Nav.Link value={'aboutme'} as={Link} bsPrefix='link' to="/aboutme">ABOUT ME </Nav.Link>
         </div>
         </Nav.Item>
         <Nav.Item>
-        <Nav.Link bsPrefix='link' href="/projects">PROJECTS </Nav.Link>
+        <Nav.Link value={'projects'} as={Link} bsPrefix='link' to="/projects">PROJECTS </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-        <Nav.Link bsPrefix='link' href="/skills">SKILLS </Nav.Link>
+        <Nav.Link value={'skills'} as={Link} bsPrefix='link' to="/skills">SKILLS </Nav.Link>
         </Nav.Item>
     </Nav>
     </Stack>

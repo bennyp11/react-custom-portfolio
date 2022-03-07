@@ -13,6 +13,7 @@
 .nav-container {
   /**border: 1px solid purple;**/
   height: 10vh;
+  width: 60%;
   display: flex;
   flex-direction: row;
   text-align: right;
@@ -108,6 +109,11 @@ background-size: 1800% 1800%;
 -z-animation: rainbow 20s ease infinite;
 -o-animation: rainbow 20s ease infinite;
   animation: rainbow 20s ease infinite;}
+
+.landing-page {
+  margin-top: 200px;
+  width: 90%;
+}
 
 @-webkit-keyframes rainbow {
     0%{background-position:0% 82%}
