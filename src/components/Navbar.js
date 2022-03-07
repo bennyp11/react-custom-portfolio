@@ -15,7 +15,9 @@ export default function NavBar(props) {
 
     return (
     <Stack bsPrefix='hstack' className="stack-container" direction="horizontal" gap={5}>
+    <div className="logo-tile-container">
     <Logo />
+    </div>
     <div className='gap'></div>
     <Nav bsPrefix='nav-container' activeKey="/home">
         <Nav.Item>
